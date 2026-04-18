@@ -2,11 +2,6 @@
 set -ouex pipefail
 
 ### Install packages
-## starship
-dnf5 -y copr enable atim/starship
-dnf5 install -y starship
-dnf5 -y copr disable atim/starship # disable COPRs so they don't end up enabled on the final image
-
 ## tailscale
 dnf5 config-manager addrepo \
   --from-repofile=https://pkgs.tailscale.com/stable/fedora/tailscale.repo \
@@ -65,10 +60,7 @@ FLATPAK_REMOTE_URL="https://dl.flathub.org/repo/flathub.flatpakrepo"
 DISABLE_FEDORA_REMOTE="true"
 FLATPAKS=(
     org.kde.okular
-    org.keepassxc.KeePassXC
-    com.github.xournalpp.xournalpp
     io.mpv.Mpv
     org.libreoffice.LibreOffice
-    net.nokyan.Resources # system monitor
 )
 setup_default_flatpaks
