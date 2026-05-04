@@ -54,6 +54,7 @@ PACKAGES=(
     trash-cli # delete by moving to trash
     fastfetch # system info
     wayvnc # VNC/remote desktop
+    wlr-randr # check/manage display resolution, scale, refresh rate, etc.
 )
 dnf5 install -y "${PACKAGES[@]}"
 
