@@ -71,5 +71,6 @@ FLATPAKS=(
     org.kde.okular
     io.mpv.Mpv
     org.libreoffice.LibreOffice
+    com.interversehq.qView # image viewer
 )
 setup_default_flatpaks
