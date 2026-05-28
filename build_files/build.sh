@@ -55,6 +55,7 @@ PACKAGES=(
     fastfetch # system info
     wayvnc # VNC/remote desktop
     wlr-randr # check/manage display resolution, scale, refresh rate, etc.
+    redhat-menus # (I think) provides XDG application menu files needed by Dolphin/KDE app picker
 )
 dnf5 install -y "${PACKAGES[@]}"
 
